@@ -21,4 +21,9 @@ titulo.textContent = `${saudacao} Meu nome é ${nome}.`;
 const botao = document.querySelector("#tema");
 botao.addEventListener("click", function () {
     document.body.classList.toggle("escuro");
+    if (document.body.classList.contains("escuro")) {
+        botao.textContent = "Modo claro";
+    } else {
+        botao.textContent = "Modo escuro";
+    }
 });
