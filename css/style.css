@@ -115,3 +115,16 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
+
+.escuro {
+    background-color: #14162B;
+    color: "F4F1EA";
+}
+
+.escuro .card {
+    background-color: #1F2240;
+}
+
+.escuro h2 {
+    color: #F4F1EA;
+}
