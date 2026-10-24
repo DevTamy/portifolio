@@ -44,6 +44,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
+    background-color: #f5b8fd;
 }
 
 th {
@@ -117,14 +118,18 @@ nav a:hover {
 }
 
 .escuro {
-    background-color: #14162B;
+    background-color: #4c0557;
     color: "F4F1EA";
 }
 
 .escuro .card {
-    background-color: #1F2240;
+    background-color: #964eb6;
 }
 
 .escuro h2 {
-    color: #F4F1EA;
+    color: #fdfdfc;
+}
+
+.escuro h1 {
+    color: #fffefe;
 }
