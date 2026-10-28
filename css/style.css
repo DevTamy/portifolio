@@ -130,7 +130,7 @@ nav a:hover {
 }
 
 .escuro h2 {
-    color: #fdfdfc;
+    color: #0a0a0a;
 }
 
 .escuro h1 {
@@ -148,9 +148,19 @@ nav a:hover {
 }
 
 .escuro table {
-    background-color: #fefdff;
+    background-color: #bd8ded;
     color: #000000;
 }
+
+.escuro p {
+    color: #fdfdfc;
+}
+
+.escuro #tema {
+    background-color: #f4eff5;
+    color: #1e1635;
+    border: 1px solid #a855f7;
+}    
 
 #resposta {
    font-weight: bold;
@@ -159,4 +169,14 @@ nav a:hover {
 .erro {
     background-color: #ffcccc;
     color: #cc0000;
+}
+
+#tema {
+    background-color: #48057f;
+    color: #ffffff;
+    border: 1px solid #3c2a6b;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
