@@ -1,25 +1,26 @@
 body {
-    background-color: #f5b8fd;
+    background-color: #f5a6ff;
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: #111010;
+    color: #000000;
     font-size: 36px;
 }
 
 h2 {
-    color: #100e0f;
+    color: #ff0080;
 }
 
 a {
-    color: #ec1db2;
+    color: #0f02ff;
 }
 
 footer {
     text-align: center;
+    
 }
 
 main {
@@ -37,26 +38,27 @@ main {
 }
 
 th, td {
-    border: 1px solid #020202;
+    border: 1px solid #000000;
+    
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #f5b8fd;
+    background-color: #ea89ea;
 }
 
 th {
-    background-color: #e74cff;
-    color: #fff8f8;
+    background-color: #8e37d5;
+    color: #ffffff;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c71bb8;
+    background-color: #f668ea;
     color: #fffdfd;
     padding: 10px 20px;
 }
@@ -79,7 +81,7 @@ nav a {
 }
 
 .gostos li {
-    background-color: #c21365;
+    background-color: #b700ff;
     color: #fffdfd;
     padding: 10px 16px;
     border-radius: 20px;
@@ -89,6 +91,7 @@ img {
     max-width: 100%;
 }
 
+/* Para celulares e telas menores */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -118,12 +121,12 @@ nav a:hover {
 }
 
 .escuro {
-    background-color: #4c0557;
-    color: "F4F1EA";
+    background-color: #3d0c68;
+    color: #000000;
 }
 
 .escuro .card {
-    background-color: #964eb6;
+    background-color: #af5eff;
 }
 
 .escuro h2 {
@@ -132,4 +135,31 @@ nav a:hover {
 
 .escuro h1 {
     color: #fffefe;
+}
+
+.escuro p {
+    color: #ffffff;
+}
+
+.escuro ol {
+    color: #2702f8;
+}
+
+.escuro th {
+    background-color: #5e1b9c;
+    color: #fef7f7;
+}
+
+.escuro table {
+    background-color: #fefdff;
+    color: #000000;
+}
+
+#resposta {
+   font-weight: bold;
+}
+
+.erro {
+    background-color: #ffcccc;
+    color: #cc0000;
 }
