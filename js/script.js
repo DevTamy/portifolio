@@ -35,3 +35,13 @@ botao.addEventListener("click", function () {
     }
 });
 }
+const gostos = ["Amo programar", "Gosto de aprender coisas novas", "Gosto de desafios"];
+console.log(gostos.length);
+console.log(gostos[0]);
+const lista = document.querySelector("#gostos");
+
+for (const gosto of gostos) {
+    const item = document.createElement("li");
+    item.textContent = gosto;
+    lista.appendChild(item);
+}
