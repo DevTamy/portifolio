@@ -1,0 +1,23 @@
+[
+    {
+        "titulo": "Portifolio",
+        "descricao": "Meu site, com 4 páginas, no ar."
+    },
+    {
+        "titulo": "Protótipo no Figma",
+        "descricao": "As telas do meu protótipo no Figma.",
+        "link": "https://www.figma.com/proto/Wa4XsRH0HtLjdJPoWeo90Y/Sem-t%C3%ADtulo?node-id=18-3&starting-point-node-id=18%3A3&t=4fIqLebMk3RQxJZW-1"
+    },
+    {
+        "titulo": "Playlist",
+        "descricao": "As musicas que eu mais ouço."
+    },
+    {
+        "titulo": "Lista de filmes",
+        "descricao": "Os filmes que eu mais gosto."
+    },
+    {
+        "titulo": "Calculadora",
+        "descricao": "Meu próximo projeto em JavaScript."
+    }
+]

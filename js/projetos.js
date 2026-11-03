@@ -1,6 +1,6 @@
 const listaProjetos = document.querySelector("#lista-projetos");
 
-function criarCardProjeto(projeto) {
+function criarCard(projeto) {
     const card = document.createElement("section");
     card.classList.add("card");
 
@@ -14,12 +14,12 @@ function criarCardProjeto(projeto) {
     listaProjetos.appendChild(card);
 }
 
-fetch("projetos.json")
-    .then(function (response) {
-        return response.json();
+fetch("js/projetos.json")
+    .then(function (resposta) {
+        return resposta.json();
     })
     .then(function (projetos) {
        for (const projeto of projetos) {
-            criarCardProjeto(projeto);
+            criarCard(projeto);
         }
-}); 
+  }); 
