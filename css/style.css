@@ -191,7 +191,7 @@ nav a:hover {
     color: #1e1635;
     border: 1px solid #a855f7;
 
-
+}
 #resposta {
    font-weight: bold;
 }
@@ -210,7 +210,6 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 
 #tema:hover {
     background-color: #3c2a6b;
