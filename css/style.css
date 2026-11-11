@@ -1,3 +1,20 @@
+/* 1. Define o esquema de cores nativo do navegador */
+html {
+    color-scheme: light;
+}
+
+html.escuro {
+    color-scheme: dark;
+}
+
+/* 2. Cores globais do modo escuro para garantir tela inteira sem falhas */
+html.escuro, 
+html.escuro body {
+    background-color: #211823 !important;
+    color: #fef7f7 !important;
+    min-height: 100vh;
+    margin: 0;
+}
 
 body {
     background-color: #FFF7F8;
@@ -5,8 +22,8 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    transition: background-color 0.05s, color 0.05s;
 }
-
 
 h1 {
     color: #39243B;
@@ -18,19 +35,17 @@ h2 {
 }
 
 a {
-    color: #fffeff;
+    color: #ffffff;
 }
 
 footer {
     text-align: center;
-    
 }
 
 main {
     max-width: 800px;
     margin: 0 auto; 
 }
-
 
 .card {
     background-color: #fff7F8;
@@ -54,7 +69,6 @@ button {
 
 th, td {
     border: 1px solid #000000;
-    
 }
 
 table {
@@ -87,6 +101,7 @@ nav a {
     color: #fffdfd;
     text-decoration: none;
 }
+
 .gostos {
     display: flex;
     gap: 12px;
@@ -135,63 +150,59 @@ nav a:hover {
     gap: 24px;
 }
 
-.escuro {
-    background-color: #211823;
-    color: #302432;
+/* --- MODO ESCURO PADRONIZADO COM html.escuro --- */
+html.escuro a {
+    color: #f4eff5;
 }
 
-.escuro a {
-    color: #070606;
-}
-
-.escuro .gostos li {
+html.escuro .gostos li {
     background-color: #563746;
     color: #fef7f7;
 }
 
-.escuro header {
+html.escuro header {
     background-color: #E49AB9;
-    color: #fef7f7;
+    color: #211823;
 }
 
-.escuro .card {
+html.escuro .card {
     background-color: #302432;
     border: 1px solid #51404F;
 }
 
-.escuro button {
+html.escuro button {
     background-color: #E49AB9;
-    color: #fef7f7;
+    color: #211823;
 }
 
-.escuro h2 {
+html.escuro h2 {
     color: #C3AFBE;
 }
 
-.escuro h1 {
+html.escuro h1 {
     color: #fff2f7;
 }
 
-.escuro th {
+html.escuro th {
     background-color: #70475C;
     color: #fef7f7;
 }
 
-.escuro table {
-    background-color: #B98CB8;
-    color: #000000;
+html.escuro table {
+    background-color: #302432;
+    color: #fef7f7;
 }
 
-.escuro p {
-    color: #fffffd;
+html.escuro p {
+    color: #fef7f7;
 }
 
-.escuro #tema {
+html.escuro #tema {
     background-color: #f4eff5;
     color: #1e1635;
     border: 1px solid #a855f7;
-
 }
+
 #resposta {
    font-weight: bold;
 }
@@ -202,9 +213,9 @@ nav a:hover {
 }
 
 #tema {
-    background-color: #48057f;
+    background-color: #493951;
     color: #ffffff;
-    border: 1px solid #3c2a6b;
+    border: 1px solid #EAD8E2;
     padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
@@ -212,5 +223,5 @@ nav a:hover {
 }
 
 #tema:hover {
-    background-color: #3c2a6b;
+    background-color: #B88BB8;
 }

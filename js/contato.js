@@ -7,7 +7,7 @@ formulario.addEventListener("submit", function (evento) {
     const mensagem = document.querySelector("#mensagem").value.trim();
 
     if (mensagem.length < 10) {
-        resposta.textContent = "Escreva pelo menos 10 caracteres.";
+        resposta.textContent = `Faltam ${10 - mensagem.length} letras.`;
         resposta.classList.add("erro");
     }   
         else {   

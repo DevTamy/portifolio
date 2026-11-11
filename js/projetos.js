@@ -14,12 +14,31 @@ function criarCard(projeto) {
     listaProjetos.appendChild(card);
 }
 
+const mostrar = (lista) => {
+    listaProjetos.innerHTML = "";
+    for (const projeto of lista) {
+        criarCard(projeto);
+    }
+    const titulos = lista.map((projeto) => projeto.titulo);
+    contagem.textContent = `${lista.length} projetos: ${titulos.join(", ")}`;
+};
+
+const filtrar = (categoria) => {
+    const lista =  todos.filter((projeto) => projeto.categoria === categoria);
+    mostrar(lista);
+};
+
 fetch("js/projetos.json")
-    .then(function (resposta) {
-        return resposta.json();
-    })
-    .then(function (projetos) {
-       for (const projeto of projetos) {
-            criarCard(projeto);
-        }
-  }); 
+    .then((resposta) => resposta.json())
+    .then((projetos) => {
+       todos = projetos;
+        mostrar(todos);
+}); 
+
+const botaoTodos = document.querySelector("#filtro-todos");
+const botaoPessoal = document.querySelector("#filtro-pessoal");
+const botaoEstudos = document.querySelector("#filtro-estudos");
+
+botaoTodos.addEventListener("click", () => mostrar(todos));
+botaoPessoal.addEventListener("click", () => filtrar("Pessoal"));
+botaoEstudos.addEventListener("click", () => filtrar("Estudos"));

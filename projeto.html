@@ -6,7 +6,15 @@
     <title>Projetos | Tania</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins">
-    <link rel="stylesheet" href="css/style.css">
+    
+        <!-- Este script tem de estar no head de TODAS as páginas -->
+    <script>
+      if (localStorage.getItem("modoEscuro") === "ativo") {
+        document.documentElement.classList.add("escuro");
+      }
+    </script>
+
+        <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -22,6 +30,13 @@
     </header>
     <main>
       <h1 >Meus Projetos</h1>
+    <div class="filtros">
+    <button id="filtro-todos">Todos</button>
+    <button id="filtro-pessoal">Pessoal</button>
+    <button id="filtro-estudos">Estudos</button> 
+    </div>
+      <p id="contagem"></p>
+       
       <div class="projetos" id="lista-projetos"></div>
     </main>
     <footer>

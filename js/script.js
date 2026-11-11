@@ -1,10 +1,10 @@
 console.log("Olá! Bem-vindo ao meu portfólio!");
 
+// --- 1. SAUDAÇÃO AUTOMÁTICA ---
 const nome = "Tania";
-let hora = new Date().getHours();
-console.log(hora);
-
+const hora = new Date().getHours();
 let saudacao;
+
 if (hora < 12) {
     saudacao = "Bom dia!";
 } else if (hora < 18) {
@@ -13,35 +13,46 @@ if (hora < 12) {
     saudacao = "Boa noite!";
 }
 
-/*procura um h1 que seja especifico da pgina inicial (ex: com id-"titulo-home")
- e altera o texto do h1 para a saudação e o nome da pessoa.*/
 const titulo = document.querySelector("#titulo-home");
-
 if (titulo) {
     titulo.textContent = `${saudacao} Meu nome é ${nome}.`;
 }
 
-// modo escuro: funciona no botão de qualquer página
-const botao = document.querySelector("#tema");
-
-if (botao) {
-botao.addEventListener("click", function () {
-    document.body.classList.toggle("escuro");
-
-    if (document.body.classList.contains("escuro")) {
-        botao.textContent = "Modo claro";
-    } else {
-        botao.textContent = "Modo escuro";
-    }
-});
-}
+// --- 2. LISTA DE GOSTOS ---
 const gostos = ["Amo programar", "Gosto de aprender coisas novas", "Gosto de desafios"];
-console.log(gostos.length);
-console.log(gostos[0]);
 const lista = document.querySelector("#gostos");
 
-for (const gosto of gostos) {
-    const item = document.createElement("li");
-    item.textContent = gosto;
-    lista.appendChild(item);
+if (lista) {
+    for (const gosto of gostos) {
+        const item = document.createElement("li");
+        item.textContent = gosto;
+        lista.appendChild(item);
+    }
+}
+const botaoTema = document.querySelector("#tema");
+
+// 1. Aplica o estado ao carregar
+if (localStorage.getItem("modoEscuro") === "ativo") {
+    document.documentElement.classList.add("escuro");
+    document.body.classList.add("escuro");
+    if (botaoTema) botaoTema.textContent = "✨";
+} else {
+    if (botaoTema) botaoTema.textContent = "🪐";
+}
+
+// 2. Evento de clique no botão de alternar
+if (botaoTema) {
+    botaoTema.addEventListener("click", function () {
+        // Alterna em ambos para garantir compatibilidade total
+        document.documentElement.classList.toggle("escuro");
+        document.body.classList.toggle("escuro");
+
+        if (document.documentElement.classList.contains("escuro")) {
+            localStorage.setItem("modoEscuro", "ativo");
+            botaoTema.textContent = "✨";
+        } else {
+            localStorage.setItem("modoEscuro", "inativo");
+            botaoTema.textContent = "🪐";
+        }
+    });
 }
