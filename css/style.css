@@ -67,20 +67,30 @@ button {
     transition: background-color 0.3s;
 }
 
-th, td {
-    border: 1px solid #000000;
+th, td{
+    background-color: #963a55;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #dccbde;
+}
+
+tr, td {
+    background-color: #f7dde5;
+    color: #000000;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #F8DDE5;
+    color: #000000;
+    background-color: #ae6b7f;
 }
 
 th {
-    background-color: #B88BB8;
-    color: #ffffff;
+    background-color: #c68ac6;
+    color: #3c1f3f;
 }
 
 header {
@@ -151,9 +161,7 @@ nav a:hover {
 }
 
 /* --- MODO ESCURO PADRONIZADO COM html.escuro --- */
-html.escuro a {
-    color: #f4eff5;
-}
+
 
 html.escuro .gostos li {
     background-color: #563746;
@@ -183,18 +191,19 @@ html.escuro h1 {
     color: #fff2f7;
 }
 
-html.escuro th {
-    background-color: #70475C;
-    color: #fef7f7;
-}
+
 
 html.escuro table {
-    background-color: #302432;
-    color: #fef7f7;
+    background-color: #684e71;
+    color: #fff4f4;
 }
 
 html.escuro p {
-    color: #fef7f7;
+    color: #ffeded;
+}
+
+html.escuro a {
+    color: #070707;
 }
 
 html.escuro #tema {
