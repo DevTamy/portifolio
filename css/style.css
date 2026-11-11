@@ -1,21 +1,24 @@
+
 body {
-    background-color: #f5a6ff;
+    background-color: #FFF7F8;
+    color: #39243B;
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+
 h1 {
-    color: #000000;
+    color: #39243B;
     font-size: 36px;
 }
 
 h2 {
-    color: #ff0080;
+    color: #57234F;
 }
 
 a {
-    color: #0f02ff;
+    color: #fffeff;
 }
 
 footer {
@@ -28,13 +31,25 @@ main {
     margin: 0 auto; 
 }
 
+
 .card {
-    background-color: #ffffff;
+    background-color: #fff7F8;
+    border: 1px solid #f0c1db;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
+}
+
+button {
+    background-color: #57234F;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 th, td {
@@ -46,11 +61,11 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #ea89ea;
+    background-color: #F8DDE5;
 }
 
 th {
-    background-color: #8e37d5;
+    background-color: #B88BB8;
     color: #ffffff;
 }
 
@@ -58,7 +73,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f668ea;
+    background-color: #A94F83;
     color: #fffdfd;
     padding: 10px 20px;
 }
@@ -81,7 +96,7 @@ nav a {
 }
 
 .gostos li {
-    background-color: #b700ff;
+    background-color: #A94F83;
     color: #fffdfd;
     padding: 10px 16px;
     border-radius: 20px;
@@ -121,46 +136,61 @@ nav a:hover {
 }
 
 .escuro {
-    background-color: #3d0c68;
-    color: #000000;
+    background-color: #211823;
+    color: #302432;
+}
+
+.escuro a {
+    color: #070606;
+}
+
+.escuro .gostos li {
+    background-color: #563746;
+    color: #fef7f7;
+}
+
+.escuro header {
+    background-color: #E49AB9;
+    color: #fef7f7;
 }
 
 .escuro .card {
-    background-color: #af5eff;
+    background-color: #302432;
+    border: 1px solid #51404F;
+}
+
+.escuro button {
+    background-color: #E49AB9;
+    color: #fef7f7;
 }
 
 .escuro h2 {
-    color: #0a0a0a;
+    color: #C3AFBE;
 }
 
 .escuro h1 {
-    color: #fffefe;
-}
-
-
-.escuro ol {
-    color: #2702f8;
+    color: #fff2f7;
 }
 
 .escuro th {
-    background-color: #5e1b9c;
+    background-color: #70475C;
     color: #fef7f7;
 }
 
 .escuro table {
-    background-color: #bd8ded;
+    background-color: #B98CB8;
     color: #000000;
 }
 
 .escuro p {
-    color: #fdfdfc;
+    color: #fffffd;
 }
 
 .escuro #tema {
     background-color: #f4eff5;
     color: #1e1635;
     border: 1px solid #a855f7;
-}    
+
 
 #resposta {
    font-weight: bold;
@@ -179,4 +209,9 @@ nav a:hover {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+
+#tema:hover {
+    background-color: #3c2a6b;
 }
